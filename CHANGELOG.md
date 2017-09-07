@@ -1,3 +1,13 @@
+<a name="0.1.1"></a>
+## 0.1.1 (2017-09-07)
+
+
+### Update
+
+* Added sauce configuration for tests ([43db84c73f649a3a6693ccb4356e6f47f03e4ad0](https://github.com/advanced-rest-client/openable-panel-behavior/commit/43db84c73f649a3a6693ccb4356e6f47f03e4ad0))
+
+
+
 <a name="0.1.5"></a>
 ## [0.1.5](https://github.com/advanced-rest-client/request-payload-editor-behavior/compare/0.1.4...0.1.5) (2017-07-29)
 

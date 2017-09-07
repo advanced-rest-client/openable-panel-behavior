@@ -6,7 +6,8 @@ addons:
   sauce_connect: true
 script:
 - npm run lint
-- polymer test --plugin sauce --job-name "openable-panel-behavior:${TRAVIS_BRANCH}" --build-number=${TRAVIS_BUILD_NUMBER}
+- polymer test --plugin sauce --job-name "openable-panel-behavior:${TRAVIS_BRANCH}"
+  --build-number=${TRAVIS_BUILD_NUMBER}
 cache:
   directories:
   - node_modules
@@ -16,3 +17,7 @@ branches:
   - develop
 after_success:
 - node tasks/ci.js
+env:
+  global:
+  - secure: OLQlMdEB0y0QI2GebdI7lhacE4utvAp9+8T3cMdGoR/uqxfEg4QZdu09h0QS09YfPDTROGV/IBoWcDKkaiAEdv5SYeSJcBjE5/u6gbdVLYCzvaDaPgfjMN7BUcQUrPT5e+JeJ7qnnx9F3HVv/7xcGZ2ZkVzZV+qrf43SEhAnElkEzNUoIuMWrJ+6WXDwMEraICmUyym3RNWQXDpL5FAr01ypoIE0sCgVhrIkIMGr+NKCSjeEoqYTCW8APhvWzrAsg4q5kQjwp83W4XlkHdzxPVpfRKT7EVqqbGvDpUNP0ZCgu4TdCRJEquw0NfT8nK8Kl4ZURIg4XPj4YL2O/ZTTlX6caJZN7vb1VAFQfSqEx8IogQIYK6zT1VkZsI8gAdd4XPV25OVQxkuqJijja6Zj8OpIQqR1EQjpymDBMj6EVY1AeLZI/YxMt5eyzDKoVEcOIXvV26rFt25AaYVweM6Zcn9DFEnGDkItrMsr54PFlUjuQizkAyRx4mqwRPcVlHEUtDvvG+vYkAq8m9B+1quxYho6GE3QARyTVnGF/Kgms2eaM1h/UqlhdlflM4uujoZGnXGO+B2O0Une3u+c+mFsFcDyzs9OausBc3V/tlu+Eq+N7N9gSUmI2Q9jywiqgF5/916kJgQPWKY45IZY6Tz/Vq8kkpR3Y5C1COpsxKDNtQs=
+  - secure: eioqJzcxiQIlcBYx2OMNUTZa+GvD4IqzgnHQ8WLf2QBh/HcqcY7c7vYcRX7RhIJ6SR9AnHVaail8/GROG/ZRDixu5JOCS+Yc9TdHXz5eVwEdEljlOM40lF+AoKLmSZ9r+4kWnrw9GBn+ytnoEKL5/CAAfQQhPXKJKAhBNT4qc1OjJp7lO2mmQxxCMQb6YxojmL5BbyLoz8je9xrOCIJ5CVV3IXkh1KlwEogsGrxwDsA0j0okb4lshG4hemKKr402HzaS6F7Y3m/tQTqVKOeZT7+11sqKq9pxEdIugt3jMeKJ2pizs9as0ErlNutrYqAV3YPCLnN+k6apBYf7fDiLO1zauJ+if1qrN1TtRIuvSMy5xwfGIR0ZtWo5e86EF7zyIlRYYz5bF6jLLe6sg8gLO2DNPmPayrN+lYiJb1KHDtrGQXYR4vXC5VsPcqZHB58UIybyOQMb+fwYt7UXD2OE8tk3JP1RA1fNAhMfFCiY5I1ZbqV7JFuXOyUKMhz0bZ4ltms2GF0zKFo95zXUtXSfZugP0RCvRhEr1Hc5HdzDlk8aUwhMs6HWrYQ1Oz+DnbjEjMgiCF2v5lIQIE9KACgnEM3Gy+yOaStKOPtP+hnrbsdTdgg0jq34pj8WipEgdKjuF5prR4r1VXeL9MD4ldiFrW6Yh8IPg7ZYITjW1Oi+eqA=
